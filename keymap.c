@@ -14,9 +14,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,       LT(L_M, KC_SPC), LT(L_N, KC_BSPC),                    /* | */ LT(L_S, KC_TAB), KC_ENT,      KC_LEAD
     ),
     [L_M] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ CAPS_WORD, KC_LBRC, KC_RBRC, KC_LPRN,  KC_RPRN,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ CAPS_WORD, KC_LBRC, KC_RBRC, KC_NO,    KC_NO,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_LEFT,   KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,     KC_NO,   KC_NO,   KC_NO,    KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,     KC_LPRN, KC_RPRN, KC_NO,    KC_NO,
         KC_ESC,  KC_NO,   KC_BSPC,                 /* | */ KC_TAB,    KC_ENT,  KC_DEL
     ),
     [L_N] = LAYOUT_split_3x5_3(
