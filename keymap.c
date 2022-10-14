@@ -3,10 +3,10 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x5_3(
-        KC_Q,         KC_W,          KC_F,           KC_P,        KC_G, /* | */ KC_J,          KC_L,        KC_U,        KC_Y,        KC_SEMICOLON,
-        GUI_T(KC_A),  ALT_T(KC_R),   CTL_T(KC_S),    SFT_T(KC_T), KC_D, /* | */ KC_H,          SFT_T(KC_N), CTL_T(KC_E), ALT_T(KC_I), GUI_T(KC_O),
-        KC_Z,         KC_X,          KC_C,           KC_V,        KC_B, /* | */ KC_K,          KC_M,        KC_COMM,     KC_DOT,      KC_SLSH,
-        KC_ESC,       LT(1, KC_SPC), LT(2, KC_BSPC),                    /* | */ LT(3, KC_TAB), KC_ENT,      KC_DEL
+        KC_Q,         KC_W,          KC_F,           KC_P,        KC_G, /* | */ KC_J,          KC_L,        KC_U,               KC_Y,        KC_SEMICOLON,
+        GUI_T(KC_A),  ALT_T(KC_R),   CTL_T(KC_S),    SFT_T(KC_T), KC_D, /* | */ KC_H,          SFT_T(KC_N), CTL_T(KC_E),        ALT_T(KC_I), GUI_T(KC_O),
+        KC_Z,         KC_X,          KC_C,           KC_V,        KC_B, /* | */ KC_K,          KC_M,        KC_COMM, KC_DOT,      KC_SLSH,
+        KC_ESC,       LT(1, KC_SPC), LT(2, KC_BSPC),                    /* | */ LT(3, KC_TAB), KC_ENT,      KC_LEAD
     ),
     [1] = LAYOUT_split_3x5_3(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ CAPS_WORD, KC_LBRC, KC_RBRC, KC_LPRN,  KC_RPRN,
@@ -26,4 +26,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TILD, KC_HASH, KC_AT,   KC_EXLM, KC_BSLS, /* | */ KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_ESC,  KC_SPC,  KC_BSPC,                   /* | */ KC_NO, KC_ENT,  KC_DEL
     )
+};
+
+LEADER_EXTERNS();
+void matrix_scan_user(void) {
+    LEADER_DICTIONARY() {
+        leading = false;
+        leader_end();
+
+        // Take screenshot
+        SEQ_ONE_KEY(KC_S) {
+            register_code(KC_LGUI);
+            register_code(KC_LSFT);
+            tap_code(KC_4);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_LGUI);
+        }
+
+        // Toggle mute in Zoom
+        SEQ_ONE_KEY(KC_M) {
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_LGUI);
+            tap_code(KC_A);
+            unregister_code(KC_LGUI);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LCTL);
+         }
+    }
 };
