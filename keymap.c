@@ -62,3 +62,9 @@ void matrix_scan_user(void) {
          }
     }
 };
+
+const key_override_t backspace_key_override = ko_make_basic(MOD_MASK_SHIFT, LT(L_N, KC_BSPC), KC_DEL);
+const key_override_t **key_overrides = (const key_override_t *[]) {
+    &backspace_key_override,
+    NULL
+};
