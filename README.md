@@ -8,13 +8,13 @@ My Corne crkbd QMK layout with 36 keys and miryoku-esque directives.
 ![base layer](viz/0-base.png)
 
 ### Movement layer
-![movement layer](viz/1-movement.png)
-
-### Numpad layer
-![numpad layer](viz/2-numpad.png)
+![movement layer](viz/1-mov.png)
 
 ### Symbol layer
-![symbol layer](viz/3-symbol.png)
+![numpad layer](viz/2-sym.png)
+
+### Numpad layer
+![symbol layer](viz/3-num.png)
 
 ## Prerequisites
 
