@@ -2,7 +2,7 @@
 #include QMK_KEYBOARD_H
 #include "chdorner36.h"
 
-const key_override_t ko_bspc_del  = ko_make_basic(MOD_MASK_SHIFT, LT(_NUM, KC_BSPC), KC_DEL);
+const key_override_t ko_bspc_del  = ko_make_basic(MOD_MASK_SHIFT, LAY_BSPC, KC_DEL);
 const key_override_t ko_lprn_ques = ko_make_basic(MOD_MASK_SHIFT, KC_LPRN, KC_QUES);
 const key_override_t ko_rprn_exlm = ko_make_basic(MOD_MASK_SHIFT, KC_RPRN, KC_EXLM);
 const key_override_t ko_lcbr_lbrc = ko_make_basic(MOD_MASK_SHIFT, KC_LCBR, KC_LBRC);
