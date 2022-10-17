@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include QMK_KEYBOARD_H
+#include "print.h"
 #include "chdorner36.h"
 
 const key_override_t ko_bspc_del  = ko_make_basic(MOD_MASK_SHIFT, LAY_BSPC, KC_DEL);
@@ -93,3 +94,11 @@ void matrix_scan_user(void) {
          }
     }
 };
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+#ifdef CONSOLE_ENABLE
+    // TODO: don't actually log the keycodes, but keep basic counters for each key, print them out when a macro is hit
+    uprintf("KL: kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+#endif
+    return true;
+}
