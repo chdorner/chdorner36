@@ -8,7 +8,8 @@ const key_override_t ko_rprn_exlm = ko_make_basic(MOD_MASK_SHIFT, KC_RPRN, KC_EX
 const key_override_t ko_lcbr_lbrc = ko_make_basic(MOD_MASK_SHIFT, KC_LCBR, KC_LBRC);
 const key_override_t ko_rcbr_rbrc = ko_make_basic(MOD_MASK_SHIFT, KC_RCBR, KC_RBRC);
 const key_override_t ko_dlr_euro  = ko_make_basic(MOD_MASK_SHIFT, KC_DLR, KC_EUR);
-const key_override_t ko_grv_ampr  = ko_make_basic(MOD_MASK_SHIFT, KC_GRV, KC_AMPR);
+const key_override_t ko_hash_ampr = ko_make_basic(MOD_MASK_SHIFT, KC_HASH, KC_AMPR);
+const key_override_t ko_grv_perc  = ko_make_basic(MOD_MASK_SHIFT, KC_GRV, KC_PERC);
 const key_override_t ko_slsh_no   = ko_make_basic(MOD_MASK_SHIFT, KC_SLSH, KC_SLSH);
 const key_override_t ko_astr_circ = ko_make_basic(MOD_MASK_SHIFT, KC_ASTR, KC_CIRC);
 const key_override_t ko_pipe_bsls = ko_make_basic(MOD_MASK_SHIFT, KC_PIPE, KC_BSLS);
@@ -19,7 +20,8 @@ const key_override_t **key_overrides = (const key_override_t *[]) {
     &ko_lcbr_lbrc,
     &ko_rcbr_rbrc,
     &ko_dlr_euro,
-    &ko_grv_ampr,
+    &ko_hash_ampr,
+    &ko_grv_perc,
     &ko_slsh_no,
     &ko_astr_circ,
     &ko_pipe_bsls,
