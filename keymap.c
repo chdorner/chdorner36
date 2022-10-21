@@ -82,5 +82,14 @@ void matrix_scan_user(void) {
             unregister_code(KC_LALT);
             unregister_code(KC_LCTL);
          }
+
+         // Lock screen
+         SEQ_ONE_KEY(KC_L) {
+            register_code(KC_LGUI);
+            register_code(KC_LCTL);
+            tap_code(KC_Q);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LGUI);
+         }
     }
 };
