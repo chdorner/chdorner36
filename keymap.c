@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,    KC_W,   KC_F,   KC_P,   KC_G, /* | */ KC_J,    KC_L,   KC_U,    KC_Y,   KC_SEMICOLON,
         HOME_A,  HOME_R, HOME_S, HOME_T, KC_D, /* | */ KC_H,    HOME_N, HOME_E,  HOME_I, HOME_O,
         KC_Z,    KC_X,   KC_C,   KC_V,   KC_B, /* | */ KC_K,    KC_M,   KC_COMM, KC_DOT, KC_QUOT,
-        KC_ESC,  LAY_SPC, LAY_BSPC,            /* | */ LAY_TAB, KC_ENT, KC_LEAD
+        KC_NO,  LAY_SPC, LAY_BSPC,             /* | */ LAY_TAB, KC_ENT, KC_LEAD
     ),
     [_MOV] = LAYOUT_split_3x5_3(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_HOME, KC_END,  KC_NO,    KC_NO,
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,  KC_NO,   KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_SYM] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ CAPSWRD, KC_MINS, KC_EQL,  KC_GRV,  KC_ASTR,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_MINS, KC_EQL,  KC_GRV,  KC_ASTR,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_TILD, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_DLR,  KC_HASH, KC_AT,   KC_SLSH, KC_PIPE,
         KC_ESC,  KC_SPC,  KC_NO,                   /* | */ KC_TAB,  KC_ENT,  KC_NO
@@ -53,6 +53,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_DOT, KC_P1,  KC_P2, KC_P3, KC_NO,   /* | */ KC_NO,  KC_NO,  KC_NO,    KC_NO,   KC_NO,
         KC_ESC, KC_SPC, KC_NO,                 /* | */ KC_TAB, KC_ENT, KC_NO
     )
+};
+
+enum combos {
+    PL_MINS,
+    VM_UNDS,
+    AO_ESC,
+    ZSQ_CAPSWRD,
+    COMBO_LENGTH,
+};
+uint16_t COMBO_LEN = COMBO_LENGTH;
+
+const uint16_t PROGMEM pl_combo[] = {KC_P, KC_L, COMBO_END};
+const uint16_t PROGMEM vm_combo[] = {KC_V, KC_M, COMBO_END};
+const uint16_t PROGMEM ao_combo[] = {HOME_A, HOME_O, COMBO_END};
+const uint16_t PROGMEM zsq_combo[] = {KC_Z, KC_QUOT, COMBO_END};
+
+combo_t key_combos[] = {
+    [PL_MINS] = COMBO(pl_combo, KC_MINS),
+    [VM_UNDS] = COMBO(vm_combo, KC_UNDS),
+    [AO_ESC] = COMBO(ao_combo, KC_ESC),
+    [ZSQ_CAPSWRD] = COMBO(zsq_combo, CAPSWRD),
 };
 
 LEADER_EXTERNS();
