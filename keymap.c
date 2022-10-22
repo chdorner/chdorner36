@@ -39,19 +39,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_HOME, KC_END,  KC_NO,    KC_NO,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_PGDN, KC_PGUP, KC_NO,    KC_NO,
-        KC_ESC,  KC_NO,   KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
+        KC_ESC,  KC_TRNS, KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_SYM] = LAYOUT_split_3x5_3(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_MINS, KC_EQL,  KC_GRV,  KC_ASTR,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_TILD, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_DLR,  KC_HASH, KC_AT,   KC_SLSH, KC_PIPE,
-        KC_ESC,  KC_SPC,  KC_NO,                   /* | */ KC_TAB,  KC_ENT,  KC_NO
+        KC_ESC,  KC_SPC,  KC_TRNS,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_NUM] = LAYOUT_split_3x5_3(
-        KC_NO,  KC_P7,  KC_P8, KC_P9, KC_EQL,  /* | */ KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_P0,  KC_P4,  KC_P5, KC_P6, KC_MINS, /* | */ KC_NO,  KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
-        KC_DOT, KC_P1,  KC_P2, KC_P3, KC_NO,   /* | */ KC_NO,  KC_NO,  KC_NO,    KC_NO,   KC_NO,
-        KC_ESC, KC_SPC, KC_NO,                 /* | */ KC_TAB, KC_ENT, KC_NO
+        KC_NO,  KC_P7,  KC_P8, KC_P9, KC_EQL,  /* | */ KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_P0,  KC_P4,  KC_P5, KC_P6, KC_MINS, /* | */ KC_NO,   KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+        KC_DOT, KC_P1,  KC_P2, KC_P3, KC_NO,   /* | */ KC_NO,   KC_NO,  KC_NO,    KC_NO,   KC_NO,
+        KC_ESC, KC_SPC, KC_BSPC,               /* | */ KC_TRNS, KC_ENT, KC_NO
     )
 };
 
