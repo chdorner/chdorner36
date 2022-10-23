@@ -13,10 +13,14 @@ enum custom_keycodes {
 };
 
 enum combos {
+    // right-handed vertical combos
+    OSQ_ESC,
+
+    // two-handed combos
     PL_MINS,
     VM_UNDS,
-    AO_ESC,
     ZSQ_CAPSWRD,
+
     COMBO_LENGTH,
 };
 uint16_t COMBO_LEN = COMBO_LENGTH;

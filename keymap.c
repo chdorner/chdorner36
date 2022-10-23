@@ -57,14 +57,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+const uint16_t PROGMEM osq_combo[] = {HOME_O, KC_QUOT, COMBO_END};
+
 const uint16_t PROGMEM pl_combo[] = {KC_P, KC_L, COMBO_END};
 const uint16_t PROGMEM vm_combo[] = {KC_V, KC_M, COMBO_END};
 const uint16_t PROGMEM ao_combo[] = {HOME_A, HOME_O, COMBO_END};
 const uint16_t PROGMEM zsq_combo[] = {KC_Z, KC_QUOT, COMBO_END};
 combo_t key_combos[] = {
+    // right-handed vertical combos
+    [OSQ_ESC] = COMBO(osq_combo, KC_ESC),
+
+    // two-handed combos
     [PL_MINS] = COMBO(pl_combo, KC_MINS),
     [VM_UNDS] = COMBO(vm_combo, KC_UNDS),
-    [AO_ESC] = COMBO(ao_combo, KC_ESC),
     [ZSQ_CAPSWRD] = COMBO(zsq_combo, CAPSWRD),
 };
 
