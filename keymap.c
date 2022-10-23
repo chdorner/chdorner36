@@ -61,8 +61,6 @@ const uint16_t PROGMEM l_n_combo[]    = {KC_L, HOME_N, COMBO_END};
 const uint16_t PROGMEM u_e_combo[]    = {KC_U, HOME_E, COMBO_END};
 const uint16_t PROGMEM n_m_combo[]    = {HOME_N, KC_M, COMBO_END};
 const uint16_t PROGMEM e_comm_combo[] = {HOME_E, KC_COMM, COMBO_END};
-const uint16_t PROGMEM y_i_combo[]    = {KC_Y, HOME_I, COMBO_END};
-const uint16_t PROGMEM scln_o_combo[] = {KC_SCLN, HOME_O, COMBO_END};
 const uint16_t PROGMEM o_sq_combo[]   = {HOME_O, KC_QUOT, COMBO_END};
 
 const uint16_t PROGMEM p_l_combo[]  = {KC_P, KC_L, COMBO_END};
@@ -72,18 +70,45 @@ const uint16_t PROGMEM z_sq_combo[] = {KC_Z, KC_QUOT, COMBO_END};
 
 combo_t key_combos[] = {
     // right-handed vertical combos
-    [L_N_LPRN]    = COMBO(l_n_combo, KC_LPRN),
-    [U_E_RPRN]    = COMBO(u_e_combo, KC_RPRN),
-    [N_M_LCBR]    = COMBO(n_m_combo, KC_LCBR),
-    [E_COMM_RCBR] = COMBO(e_comm_combo, KC_RCBR),
-    [Y_I_LBRC]    = COMBO(y_i_combo, KC_LBRC),
-    [SCLN_O_RBRC] = COMBO(scln_o_combo, KC_RBRC),
-    [O_SQ_ESC]    = COMBO(o_sq_combo, KC_ESC),
+    [L_N_LPRN]         = COMBO(l_n_combo, KC_LPRN),
+    [U_E_RPRN]         = COMBO(u_e_combo, KC_RPRN),
+    [N_M_LCBR_LBRC]    = COMBO_ACTION(n_m_combo),
+    [E_COMM_RCBR_RBRC] = COMBO_ACTION(e_comm_combo),
+    [O_SQ_ESC]         = COMBO(o_sq_combo, KC_ESC),
 
     // two-handed combos
     [P_L_MINS]     = COMBO(p_l_combo, KC_MINS),
     [V_M_UNDS]     = COMBO(v_m_combo, KC_UNDS),
     [Z_SQ_CAPSWRD] = COMBO(z_sq_combo, CAPSWRD),
+};
+
+uint8_t mod_state;
+void process_combo_event(uint16_t combo_index, bool pressed) {
+    mod_state = get_mods();
+
+    switch(combo_index) {
+        case N_M_LCBR_LBRC:
+            if (pressed) {
+                if (mod_state & MOD_MASK_SHIFT) {
+                    del_mods(MOD_MASK_SHIFT);
+                    tap_code16(KC_LBRC);
+                    set_mods(mod_state);
+                } else {
+                    tap_code16(KC_LCBR);
+                }
+            }
+            break;
+        case E_COMM_RCBR_RBRC:
+            if (pressed) {
+                if (mod_state & MOD_MASK_SHIFT) {
+                    del_mods(MOD_MASK_SHIFT);
+                    tap_code16(KC_RBRC);
+                    set_mods(mod_state);
+                } else {
+                    tap_code16(KC_RCBR);
+                }
+            }
+    }
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
