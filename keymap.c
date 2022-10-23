@@ -26,7 +26,7 @@ const key_override_t **key_overrides = (const key_override_t *[]) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x5_3(
-        KC_Q,    KC_W,   KC_F,   KC_P,   KC_G, /* | */ KC_J,    KC_L,   KC_U,    KC_Y,   KC_SEMICOLON,
+        KC_Q,    KC_W,   KC_F,   KC_P,   KC_G, /* | */ KC_J,    KC_L,   KC_U,    KC_Y,   KC_SCLN,
         HOME_A,  HOME_R, HOME_S, HOME_T, KC_D, /* | */ KC_H,    HOME_N, HOME_E,  HOME_I, HOME_O,
         KC_Z,    KC_X,   KC_C,   KC_V,   KC_B, /* | */ KC_K,    KC_M,   KC_COMM, KC_DOT, KC_QUOT,
         LAY_PAD, LAY_SPC, LAY_BSPC,            /* | */ LAY_TAB, KC_ENT, LAY_PAD
@@ -57,20 +57,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-const uint16_t PROGMEM osq_combo[] = {HOME_O, KC_QUOT, COMBO_END};
+const uint16_t PROGMEM l_n_combo[]    = {KC_L, HOME_N, COMBO_END};
+const uint16_t PROGMEM u_e_combo[]    = {KC_U, HOME_E, COMBO_END};
+const uint16_t PROGMEM n_m_combo[]    = {HOME_N, KC_M, COMBO_END};
+const uint16_t PROGMEM e_comm_combo[] = {HOME_E, KC_COMM, COMBO_END};
+const uint16_t PROGMEM y_i_combo[]    = {KC_Y, HOME_I, COMBO_END};
+const uint16_t PROGMEM scln_o_combo[] = {KC_SCLN, HOME_O, COMBO_END};
+const uint16_t PROGMEM o_sq_combo[]   = {HOME_O, KC_QUOT, COMBO_END};
 
-const uint16_t PROGMEM pl_combo[] = {KC_P, KC_L, COMBO_END};
-const uint16_t PROGMEM vm_combo[] = {KC_V, KC_M, COMBO_END};
-const uint16_t PROGMEM ao_combo[] = {HOME_A, HOME_O, COMBO_END};
-const uint16_t PROGMEM zsq_combo[] = {KC_Z, KC_QUOT, COMBO_END};
+const uint16_t PROGMEM p_l_combo[]  = {KC_P, KC_L, COMBO_END};
+const uint16_t PROGMEM v_m_combo[]  = {KC_V, KC_M, COMBO_END};
+const uint16_t PROGMEM a_o_combo[]  = {HOME_A, HOME_O, COMBO_END};
+const uint16_t PROGMEM z_sq_combo[] = {KC_Z, KC_QUOT, COMBO_END};
+
 combo_t key_combos[] = {
     // right-handed vertical combos
-    [OSQ_ESC] = COMBO(osq_combo, KC_ESC),
+    [L_N_LPRN]    = COMBO(l_n_combo, KC_LPRN),
+    [U_E_RPRN]    = COMBO(u_e_combo, KC_RPRN),
+    [N_M_LCBR]    = COMBO(n_m_combo, KC_LCBR),
+    [E_COMM_RCBR] = COMBO(e_comm_combo, KC_RCBR),
+    [Y_I_LBRC]    = COMBO(y_i_combo, KC_LBRC),
+    [SCLN_O_RBRC] = COMBO(scln_o_combo, KC_RBRC),
+    [O_SQ_ESC]    = COMBO(o_sq_combo, KC_ESC),
 
     // two-handed combos
-    [PL_MINS] = COMBO(pl_combo, KC_MINS),
-    [VM_UNDS] = COMBO(vm_combo, KC_UNDS),
-    [ZSQ_CAPSWRD] = COMBO(zsq_combo, CAPSWRD),
+    [P_L_MINS]     = COMBO(p_l_combo, KC_MINS),
+    [V_M_UNDS]     = COMBO(v_m_combo, KC_UNDS),
+    [Z_SQ_CAPSWRD] = COMBO(z_sq_combo, CAPSWRD),
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

@@ -14,12 +14,18 @@ enum custom_keycodes {
 
 enum combos {
     // right-handed vertical combos
-    OSQ_ESC,
+    L_N_LPRN,
+    U_E_RPRN,
+    N_M_LCBR,
+    E_COMM_RCBR,
+    Y_I_LBRC,
+    SCLN_O_RBRC,
+    O_SQ_ESC,
 
     // two-handed combos
-    PL_MINS,
-    VM_UNDS,
-    ZSQ_CAPSWRD,
+    P_L_MINS,
+    V_M_UNDS,
+    Z_SQ_CAPSWRD,
 
     COMBO_LENGTH,
 };
