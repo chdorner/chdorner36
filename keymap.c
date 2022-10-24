@@ -3,24 +3,20 @@
 #include "chdorner36.h"
 
 const key_override_t ko_bspc_del  = ko_make_basic(MOD_MASK_SHIFT, LAY_BSPC, KC_DEL);
-const key_override_t ko_lcbr_lbrc = ko_make_basic(MOD_MASK_SHIFT, KC_LCBR, KC_LBRC);
-const key_override_t ko_rcbr_rbrc = ko_make_basic(MOD_MASK_SHIFT, KC_RCBR, KC_RBRC);
 const key_override_t ko_dlr_euro  = ko_make_basic(MOD_MASK_SHIFT, KC_DLR, KC_EUR);
-const key_override_t ko_hash_ampr = ko_make_basic(MOD_MASK_SHIFT, KC_HASH, KC_AMPR);
-const key_override_t ko_grv_perc  = ko_make_basic(MOD_MASK_SHIFT, KC_GRV, KC_PERC);
+const key_override_t ko_eql_no    = ko_make_basic(MOD_MASK_SHIFT, KC_EQL, KC_EQL);
+const key_override_t ko_ques_exlm = ko_make_basic(MOD_MASK_SHIFT, KC_QUES, KC_EXLM);
+const key_override_t ko_grv_no    = ko_make_basic(MOD_MASK_SHIFT, KC_GRV, KC_GRV);
+const key_override_t ko_bsls_no   = ko_make_basic(MOD_MASK_SHIFT, KC_BSLS, KC_BSLS);
 const key_override_t ko_slsh_no   = ko_make_basic(MOD_MASK_SHIFT, KC_SLSH, KC_SLSH);
-const key_override_t ko_astr_circ = ko_make_basic(MOD_MASK_SHIFT, KC_ASTR, KC_CIRC);
-const key_override_t ko_pipe_bsls = ko_make_basic(MOD_MASK_SHIFT, KC_PIPE, KC_BSLS);
 const key_override_t **key_overrides = (const key_override_t *[]) {
     &ko_bspc_del,
-    &ko_lcbr_lbrc,
-    &ko_rcbr_rbrc,
     &ko_dlr_euro,
-    &ko_hash_ampr,
-    &ko_grv_perc,
+    &ko_eql_no,
+    &ko_ques_exlm,
+    &ko_grv_no,
+    &ko_bsls_no,
     &ko_slsh_no,
-    &ko_astr_circ,
-    &ko_pipe_bsls,
     NULL
 };
 
@@ -38,9 +34,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_TRNS, KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_SYM] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_EQL,  KC_QUES, KC_EXLM, KC_GRV,  KC_ASTR,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_TILD, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_DLR,  KC_HASH, KC_AT,   KC_SLSH, KC_PIPE,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_PLUS, KC_EQL,  KC_AMPR, KC_ASTR, KC_PERC,
+        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_TILD, KC_QUES, KC_HASH, KC_GRV,  KC_SLSH,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_DLR,  KC_AT,   KC_BSLS, KC_PIPE, KC_CIRC,
         KC_NO,   KC_SPC,  KC_TRNS,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_NUM] = LAYOUT_split_3x5_3(
