@@ -28,9 +28,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LAY_PAD, LAY_SPC, LAY_BSPC,            /* | */ LAY_TAB, KC_ENT, LAY_PAD
     ),
     [_MOV] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_HOME, KC_END,  KC_NO,    KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
         KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_NO,   KC_PGDN, KC_PGUP, KC_NO,    KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_NO,
         KC_NO,   KC_TRNS, KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
     ),
     [_SYM] = LAYOUT_split_3x5_3(
