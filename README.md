@@ -32,7 +32,7 @@ My Corne crkbd QMK layout with 36 keys and miryoku-esque directives.
 ![symbol layer](viz/3-num.png)
 
 ### Macropad layer
-![macropad layer](viz/4-pad.png)
+![macropad layer](viz/4-mcr.png)
 
 ## Prerequisites
 

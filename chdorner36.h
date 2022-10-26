@@ -3,7 +3,7 @@ enum layers {
     _MOV,
     _SYM,
     _NUM,
-    _PAD,
+    _MCR,
 };
 
 enum custom_keycodes {
@@ -42,6 +42,6 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 #define LAY_SPC  LT(_MOV, KC_SPC)
 #define LAY_BSPC LT(_SYM, KC_BSPC)
 #define LAY_TAB  LT(_NUM, KC_TAB)
-#define LAY_PAD  OSL(_PAD)
+#define LAY_MCR  OSL(_MCR)
 
 #define KC_EUR LSA(KC_2)
