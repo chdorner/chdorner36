@@ -75,6 +75,7 @@ combo_t key_combos[] = {
     // two-handed combos
     [P_L_MINS]     = COMBO(p_l_combo, KC_MINS),
     [V_M_UNDS]     = COMBO(v_m_combo, KC_UNDS),
+    [A_O_ESC]      = COMBO(a_o_combo, KC_ESC),
     [Z_SQ_CAPSWRD] = COMBO(z_sq_combo, CAPSWRD),
 };
 

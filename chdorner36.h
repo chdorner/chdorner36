@@ -23,6 +23,7 @@ enum combos {
     // two-handed combos
     P_L_MINS,
     V_M_UNDS,
+    A_O_ESC,
     Z_SQ_CAPSWRD,
 
     COMBO_LENGTH,
