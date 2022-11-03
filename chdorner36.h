@@ -46,3 +46,5 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 #define LAY_MCR  OSL(_MCR)
 
 #define KC_EUR LSA(KC_2)
+#define KC_NAVB LGUI(KC_LCBR)
+#define KC_NAVF LGUI(KC_RCBR)
