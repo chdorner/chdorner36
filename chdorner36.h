@@ -48,3 +48,4 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 #define KC_EUR LSA(KC_2)
 #define KC_NAVB LGUI(KC_LCBR)
 #define KC_NAVF LGUI(KC_RCBR)
+#define KC_CYW LGUI(KC_GRV)
