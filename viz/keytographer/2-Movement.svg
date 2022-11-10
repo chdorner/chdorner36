@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="990" height="365">
+  <style><![CDATA[
+svg {
+  background-color: #FFF4F2;
+}]]></style>
+  <g id="2d9bb283-b7d5-4bbd-8f5d-c62f2de595f2">
+    <rect x="10" y="32" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="17" y="38" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="45" y="66" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="8bfed77b-5534-429d-9991-962dbad787b2">
+    <rect x="85" y="17" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="92" y="23" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="120" y="51" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="fd228674-51cd-442c-96cf-747ecee1e232">
+    <rect x="160" y="10" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="167" y="16" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="195" y="44" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="c89a22fd-65af-42d5-8b91-078abd7da12c">
+    <rect x="235" y="17" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="242" y="23" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="270" y="51" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="f6015fe8-d50c-4544-8f78-f2e043a47d0d">
+    <rect x="310" y="25" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="317" y="31" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="345" y="59" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="49e24182-1015-4d36-b2aa-7a6ea2f117af">
+    <rect x="610" y="25" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="617" y="31" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="645" y="59" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">cycle win</text>
+  </g>
+  <g id="13a42527-5aee-4410-b40f-a58320e6c39a">
+    <rect x="685" y="17" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="692" y="23" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="720" y="51" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">nav back</text>
+  </g>
+  <g id="6a560c6e-a005-4012-bf96-82768f4b2810">
+    <rect x="760" y="10" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="767" y="16" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="795" y="44" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">nav fwd</text>
+  </g>
+  <g id="e98f9de3-238c-459a-9778-2609a89afd5f">
+    <rect x="835" y="17" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="842" y="23" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="870" y="51" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="0c9b7a2e-1726-4769-903a-efe1225c86b8">
+    <rect x="910" y="32" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="917" y="38" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="945" y="66" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="f5e31743-32d6-4cdf-a836-7fc088bf4232">
+    <rect x="10" y="107" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="17" y="113" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="45" y="141" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">gui</text>
+  </g>
+  <g id="61a4cfc1-fd13-4c3f-ac02-03cab4e4c850">
+    <rect x="85" y="92" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="92" y="98" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="120" y="126" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">alt</text>
+  </g>
+  <g id="37bcfab1-afb0-4c5d-8bce-a4526a9f0a5f">
+    <rect x="160" y="85" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="167" y="91" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="195" y="119" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">ctrl</text>
+  </g>
+  <g id="3b753e35-49fc-413b-b4ec-38042b7f0eb3">
+    <rect x="235" y="92" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="242" y="98" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="270" y="126" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">shift</text>
+  </g>
+  <g id="edd43b99-88f0-47fd-a6f7-8d08d12d421e">
+    <rect x="310" y="100" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="317" y="106" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="345" y="134" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="4ce3c6ff-4125-4829-b83f-7bace476e2e8">
+    <rect x="610" y="100" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="617" y="106" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="645" y="134" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">left</text>
+  </g>
+  <g id="7f755439-e123-4a59-af3e-8de0be6491fe">
+    <rect x="685" y="92" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="692" y="98" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="720" y="126" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">down</text>
+  </g>
+  <g id="4d25bca9-e4ef-4a03-a1d6-62bb394bf71b">
+    <rect x="760" y="85" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="767" y="91" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="795" y="119" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">up</text>
+  </g>
+  <g id="607eb1e1-ad34-4806-95cd-d70f228dd1eb">
+    <rect x="835" y="92" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="842" y="98" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="870" y="126" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">right</text>
+  </g>
+  <g id="e7cb0e81-6361-4ee7-9cb5-53757676b4cf">
+    <rect x="910" y="107" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="917" y="113" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="945" y="141" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="056a590b-77f2-4001-a633-e43bd75d17df">
+    <rect x="10" y="182" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="17" y="188" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="45" y="216" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="e55d529a-f194-4fe5-a541-5118ff7d3bf5">
+    <rect x="85" y="167" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="92" y="173" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="120" y="201" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="fd984701-88f5-43c3-bc8c-e4969b207fb7">
+    <rect x="160" y="160" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="167" y="166" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="195" y="194" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="47250796-733f-41b9-b4b2-37230e48fda3">
+    <rect x="235" y="167" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="242" y="173" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="270" y="201" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="6eca7ecd-3407-494b-93ab-f5a230dcd8ff">
+    <rect x="310" y="175" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="317" y="181" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="345" y="209" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="63aa5835-1bef-451d-a63c-363d34bab0e6">
+    <rect x="610" y="175" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="617" y="181" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="645" y="209" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">home</text>
+  </g>
+  <g id="a3f764e2-8fad-484f-9686-07e5cc101cb3">
+    <rect x="685" y="167" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="692" y="173" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="720" y="201" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">pgdn</text>
+  </g>
+  <g id="5c0485ed-6596-499a-9161-fda61ecc6a8f">
+    <rect x="760" y="160" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="767" y="166" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="795" y="194" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">pgup</text>
+  </g>
+  <g id="86883dfa-1637-4678-b4ad-67ee4fa403ae">
+    <rect x="835" y="167" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="842" y="173" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="870" y="201" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">end</text>
+  </g>
+  <g id="90eed735-8739-4530-a47e-b87bf3b99f87">
+    <rect x="910" y="182" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="917" y="188" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="945" y="216" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="3eb9f3f1-925e-47df-9a98-a69b4bb295ac">
+    <rect x="235" y="287" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="242" y="293" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="270" y="321" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="989acc96-0e8d-42c0-a189-f2a9516982bc">
+    <rect x="310" y="287" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="317" y="293" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="345" y="321" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+  <g id="b19267cb-2c7e-41d0-ae49-5165d4a54401">
+    <rect x="385" y="250" width="70.000000" height="105.000000" rx="3" fill="#383838"/>
+    <rect x="392" y="256" width="56.000000" height="91.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="420" y="301" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">bspc</text>
+  </g>
+  <g id="b421a580-7cd7-4042-9bf5-4b3aba81a40d">
+    <rect x="535" y="250" width="70.000000" height="105.000000" rx="3" fill="#383838"/>
+    <rect x="542" y="256" width="56.000000" height="91.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="570" y="301" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">tab</text>
+  </g>
+  <g id="6400d1b1-365e-4791-920e-1bab8fdd492f">
+    <rect x="610" y="287" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="617" y="293" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="645" y="321" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle">ent</text>
+  </g>
+  <g id="6ff248c5-6d3a-47c5-9d64-efe5bb277cbb">
+    <rect x="685" y="287" width="70.000000" height="70.000000" rx="3" fill="#383838"/>
+    <rect x="692" y="293" width="56.000000" height="56.000000" fill="#fff" fill-opacity="0.1"/>
+    <text x="720" y="321" font-family="Arial" font-size="16" fill="#e3e3e3" text-anchor="middle" dominant-baseline="middle"></text>
+  </g>
+</svg>

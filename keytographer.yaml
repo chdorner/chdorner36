@@ -1,0 +1,510 @@
+name: chdorner36
+keyboard: crkbd
+canvas:
+    width: 990
+    height: 365
+    background_color: "#FFF4F2"
+layers:
+    - name: Base
+      keys:
+        - label: q
+          code: KC_Q
+        - label: w
+          code: KC_W
+        - label: f
+          code: KC_F
+        - label: p
+          code: KC_P
+        - label: g
+          code: KC_G
+
+
+        - label: j
+          code: KC_J
+        - label: l
+          code: KC_L
+        - label: u
+          code: KC_U
+        - label: "y"
+          code: KC_Y
+        - label: ;
+          code: KC_SCLN
+          shift: ":"
+
+        - label: a
+          code: HOME_A
+          hold: gui
+        - label: r
+          code: HOME_R
+          hold: alt
+        - label: s
+          code: HOME_S
+          hold: ctrl
+        - label: t
+          code: HOME_T
+          hold: shift
+        - label: d
+          code: KC_D
+
+        - label: h
+          code: KC_H
+        - label: "n"
+          code: HOME_N
+          hold: shift
+        - label: e
+          code: HOME_E
+          hold: ctrl
+        - label: i
+          code: HOME_I
+          hold: alt
+        - label: o
+          code: HOME_O
+          hold: gui
+
+        - label: z
+          code: KC_Z
+        - label: x
+          code: KC_X
+        - label: c
+          code: KC_C
+        - label: v
+          code: KC_V
+        - label: b
+          code: KC_B
+
+        - label: k
+          code: KC_K
+        - label: m
+          code: KC_M
+        - label: ","
+          code: KC_COMM
+          shift: "<"
+        - label: "."
+          code: KC_DOT
+          shift: ">"
+        - label: "'"
+          code: KC_QUOT
+          shift: '"'
+
+        - label: OSL_mcr
+          code: LAY_MCR
+        - label: spc
+          code: LAY_SPC
+        - label: bspc
+          code: LAY_BSPC
+
+        - label: tab
+          code: LAY_TAB
+        - label: ent
+          code: KC_ENT
+        - label: OSL_mcr
+          code: LAY_MCR
+
+    - name: Movement
+      keys:
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label: cycle win
+          code: KC_CYW
+        - label: nav back
+          code: KC_NAVB
+        - label: nav fwd
+          code: KC_KAVF
+        - label:
+        - label:
+
+        - label: gui
+          code: KC_LGUI
+        - label: alt
+          code: KC_LALT
+        - label: ctrl
+          code: KC_LCTL
+        - label: shift
+          code: KC_LSFT
+        - label:
+
+        - label: left
+          code: KC_LEFT
+        - label: down
+          code: KC_DOWN
+        - label: up
+          code: KC_UP
+        - label: right
+          code: KC_RIGHT
+        - label:
+
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label: home
+          code: KC_HOME
+        - label: pgdn
+          code: KC_PGDN
+        - label: pgup
+          code: KC_PGUP
+        - label: end
+          code: KC_END
+        - label:
+
+        - label:
+        - active: true
+          code: KC_TRNS
+        - label: bspc
+          code: KC_BSPC
+
+        - label: tab
+          code: KC_TAB
+        - label: ent
+          code: KC_ENT
+        - label:
+
+    - name: Symbols
+      keys:
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label: +
+          code: KC_PLUS
+        - label: =
+          code: KC_EQL
+        - label: "&"
+          code: KC_AMPR
+        - label: "*"
+          code: KC_ASTR
+        - label: "%"
+          code: KC_PERC
+
+        - label: gui
+          code: KC_LGUI
+        - label: alt
+          code: KC_LALT
+        - label: ctrl
+          code: KC_LCTL
+        - label: shift
+          code: KC_LSFT
+        - label:
+
+        - label: "~"
+          code: KC_TILD
+        - label: "?"
+          code: KC_QUES
+          shift: "!"
+        - label: "#"
+          code: KC_HASH
+        - label: "`"
+          code: KC_GRV
+        - label: "/"
+          code: KC_SLSH
+
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label: "$"
+          code: KC_DLR
+          shift: €
+        - label: "@"
+          code: KC_AT
+        - label: "\\"
+          code: KC_BSLS
+        - label: "|"
+          code: KC_PIPE
+        - label: "^"
+          code: KC_CIRC
+
+        - label:
+        - label: spc
+          code: KC_SPC
+        - active: true
+          code: KC_TRNS
+
+        - label: tab
+          code: KC_TAB
+        - label: ent
+          code: KC_ENT
+        - label:
+
+    - name: Numpad
+      keys:
+        - label:
+        - label: 7
+          code: KC_P7
+        - label: 8
+          code: KC_P8
+        - label: 9
+          code: KC_P9
+        - label: =
+          code: KC_EQL
+
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label: 0
+          code: KC_P0
+        - label: 4
+          code: KC_P4
+        - label: 5
+          code: KC_P5
+        - label: 6
+          code: KC_P6
+        - label: "-"
+          code: KC_MINS
+
+        - label:
+        - label: shift
+          code: KC_RSFT
+        - label: ctrl
+          code: KC_RCTL
+        - label: alt
+          code: KC_RALT
+        - label: gui
+          code: KC_RGUI
+
+        - label: "."
+          code: KC_DOT
+        - label: 1
+          code: KC_P1
+        - label: 2
+          code: KC_P2
+        - label: 3
+          code: KC_P3
+        - label:
+
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label:
+        - label: spc
+          code: KC_SPC
+        - label: bspc
+          code: KC_BSPC
+
+        - active: true
+          code: KC_TRNS
+        - label: ent
+          code: KC_ENT
+        - label:
+
+    - name: Macro
+      keys:
+        - label: lock screen
+          code: LCKSCRN
+        - label:
+        - label:
+        - label:
+        - label: boot loader
+          code: QK_BOOT
+
+        - label:
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label:
+        - label:
+        - label: screeshot
+          code: SCRNSHT
+        - label:
+        - label:
+
+        - label: prev track
+          code: KC_MPRV
+        - label: vol dn
+          code: KC_VOLD
+        - label: vol up
+          code: KC_VOLU
+        - label: next track
+          code: KC_MNXT
+        - label:
+
+        - label: Zoom mute
+          code: ZMUTE
+        - label:
+        - label:
+        - label:
+        - label:
+
+        - label:
+        - label: play / pause
+          code: KC_MPLY
+        - label:
+        - label: mute
+          code: KC_MUTE
+        - label: Zoom mute
+          code: ZMUTE
+
+        - active: true
+          code: KC_TRNS
+        - label:
+        - label:
+
+        - label:
+        - label:
+        - active: true
+          code: KC_TRNS
+
+layout:
+    keys:
+        - x: 0
+          "y": 0.3
+          w: 1
+          h: 1
+        - x: 1
+          "y": 0.1
+          w: 1
+          h: 1
+        - x: 2
+          "y": 0
+          w: 1
+          h: 1
+        - x: 3
+          "y": 0.1
+          w: 1
+          h: 1
+        - x: 4
+          "y": 0.2
+          w: 1
+          h: 1
+        - x: 8
+          "y": 0.2
+          w: 1
+          h: 1
+        - x: 9
+          "y": 0.1
+          w: 1
+          h: 1
+        - x: 10
+          "y": 0
+          w: 1
+          h: 1
+        - x: 11
+          "y": 0.1
+          w: 1
+          h: 1
+        - x: 12
+          "y": 0.3
+          w: 1
+          h: 1
+        - x: 0
+          "y": 1.3
+          w: 1
+          h: 1
+        - x: 1
+          "y": 1.1
+          w: 1
+          h: 1
+        - x: 2
+          "y": 1
+          w: 1
+          h: 1
+        - x: 3
+          "y": 1.1
+          w: 1
+          h: 1
+        - x: 4
+          "y": 1.2
+          w: 1
+          h: 1
+        - x: 8
+          "y": 1.2
+          w: 1
+          h: 1
+        - x: 9
+          "y": 1.1
+          w: 1
+          h: 1
+        - x: 10
+          "y": 1
+          w: 1
+          h: 1
+        - x: 11
+          "y": 1.1
+          w: 1
+          h: 1
+        - x: 12
+          "y": 1.3
+          w: 1
+          h: 1
+        - x: 0
+          "y": 2.3
+          w: 1
+          h: 1
+        - x: 1
+          "y": 2.1
+          w: 1
+          h: 1
+        - x: 2
+          "y": 2
+          w: 1
+          h: 1
+        - x: 3
+          "y": 2.1
+          w: 1
+          h: 1
+        - x: 4
+          "y": 2.2
+          w: 1
+          h: 1
+        - x: 8
+          "y": 2.2
+          w: 1
+          h: 1
+        - x: 9
+          "y": 2.1
+          w: 1
+          h: 1
+        - x: 10
+          "y": 2
+          w: 1
+          h: 1
+        - x: 11
+          "y": 2.1
+          w: 1
+          h: 1
+        - x: 12
+          "y": 2.3
+          w: 1
+          h: 1
+        - x: 3
+          "y": 3.7
+          w: 1
+          h: 1
+        - x: 4
+          "y": 3.7
+          w: 1
+          h: 1
+        - x: 5
+          "y": 3.2
+          w: 1
+          h: 1.5
+        - x: 7
+          "y": 3.2
+          w: 1
+          h: 1.5
+        - x: 8
+          "y": 3.7
+          w: 1
+          h: 1
+        - x: 9
+          "y": 3.7
+          w: 1
+          h: 1
