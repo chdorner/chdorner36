@@ -113,7 +113,7 @@ layers:
         - label: nav back
           code: KC_NAVB
         - label: nav fwd
-          code: KC_KAVF
+          code: KC_NAVF
         - label:
         - label:
 
@@ -283,7 +283,8 @@ layers:
           code: KC_P2
         - label: 3
           code: KC_P3
-        - label:
+        - label: +
+          code: KC_PLUS
 
         - label:
         - label:
@@ -363,6 +364,7 @@ layers:
           code: KC_TRNS
 
 layout:
+    macro: LAYOUT_split_3x5_3
     keys:
         - x: 0
           "y": 0.3
