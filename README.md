@@ -5,7 +5,7 @@ My Corne crkbd QMK layout with 36 keys and miryoku-esque directives.
 ## Layout
 
 ### Base layer
-![base layer](viz/0-base.png)
+![base layer](viz/keytographer/1-Base.svg)
 
 #### Combos
 
@@ -24,16 +24,16 @@ My Corne crkbd QMK layout with 36 keys and miryoku-esque directives.
   * `CAPS WORD` = `z` + `'` – both pinky fingers below home row
 
 ### Movement layer
-![movement layer](viz/1-mov.png)
+![movement layer](viz/keytographer/2-Movement.svg)
 
 ### Symbol layer
-![numpad layer](viz/2-sym.png)
+![numpad layer](viz/keytographer/3-Symbols.svg)
 
 ### Numpad layer
-![symbol layer](viz/3-num.png)
+![symbol layer](viz/keytographer/4-Numpad.svg)
 
 ### Macropad layer
-![macropad layer](viz/4-mcr.png)
+![macropad layer](viz/keytographer/5-Macro.svg)
 
 ## Prerequisites
 

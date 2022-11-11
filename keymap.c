@@ -20,38 +20,15 @@ const key_override_t **key_overrides = (const key_override_t *[]) {
     NULL
 };
 
+//keytographer:generated:start
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_BASE] = LAYOUT_split_3x5_3(
-        KC_Q,    KC_W,   KC_F,   KC_P,   KC_G, /* | */ KC_J,    KC_L,   KC_U,    KC_Y,   KC_SCLN,
-        HOME_A,  HOME_R, HOME_S, HOME_T, KC_D, /* | */ KC_H,    HOME_N, HOME_E,  HOME_I, HOME_O,
-        KC_Z,    KC_X,   KC_C,   KC_V,   KC_B, /* | */ KC_K,    KC_M,   KC_COMM, KC_DOT, KC_QUOT,
-        LAY_MCR, LAY_SPC, LAY_BSPC,            /* | */ LAY_TAB, KC_ENT, LAY_MCR
-    ),
-    [_MOV] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_CYW,  KC_NAVB, KC_NAVF, KC_NO,    KC_NO,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_NO,
-        KC_NO,   KC_TRNS, KC_BSPC,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
-    ),
-    [_SYM] = LAYOUT_split_3x5_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_PLUS, KC_EQL,  KC_AMPR, KC_ASTR, KC_PERC,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, /* | */ KC_TILD, KC_QUES, KC_HASH, KC_GRV,  KC_SLSH,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, /* | */ KC_DLR,  KC_AT,   KC_BSLS, KC_PIPE, KC_CIRC,
-        KC_NO,   KC_SPC,  KC_TRNS,                 /* | */ KC_TAB,  KC_ENT,  KC_NO
-    ),
-    [_NUM] = LAYOUT_split_3x5_3(
-        KC_NO,  KC_P7,  KC_P8, KC_P9, KC_EQL,  /* | */ KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_P0,  KC_P4,  KC_P5, KC_P6, KC_MINS, /* | */ KC_NO,   KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
-        KC_DOT, KC_P1,  KC_P2, KC_P3, KC_NO,   /* | */ KC_NO,   KC_NO,  KC_NO,    KC_NO,   KC_NO,
-        KC_NO,  KC_SPC, KC_BSPC,               /* | */ KC_TRNS, KC_ENT, KC_NO
-    ),
-    [_MCR] = LAYOUT_split_3x5_3(
-        LCKSCRN, KC_NO, KC_NO,   KC_NO, QK_BOOT, /* | */ KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO, SCRNSHT, KC_NO, KC_NO,   /* | */ KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_NO,
-        ZMUTE,   KC_NO, KC_NO,   KC_NO, KC_NO,   /* | */ KC_NO,   KC_MPLY, KC_NO,   KC_MUTE, ZMUTE,
-        KC_TRNS, KC_NO, KC_NO,                   /* | */ KC_NO,   KC_NO,   KC_TRNS
-    )
+    [0] = LAYOUT_split_3x5_3(KC_Q, KC_W, KC_F, KC_P, KC_G, KC_J, KC_L, KC_U, KC_Y, KC_SCLN, HOME_A, HOME_R, HOME_S, HOME_T, KC_D, KC_H, HOME_N, HOME_E, HOME_I, HOME_O, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_K, KC_M, KC_COMM, KC_DOT, KC_QUOT, LAY_MCR, LAY_SPC, LAY_BSPC, LAY_TAB, KC_ENT, LAY_MCR),
+    [1] = LAYOUT_split_3x5_3(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_CYW, KC_NAVB, KC_NAVF, KC_NO, KC_NO, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_NO, KC_NO, KC_TRNS, KC_BSPC, KC_TAB, KC_ENT, KC_NO),
+    [2] = LAYOUT_split_3x5_3(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_PLUS, KC_EQL, KC_AMPR, KC_ASTR, KC_PERC, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_TILD, KC_QUES, KC_HASH, KC_GRV, KC_SLSH, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_DLR, KC_AT, KC_BSLS, KC_PIPE, KC_CIRC, KC_NO, KC_SPC, KC_TRNS, KC_TAB, KC_ENT, KC_NO),
+    [3] = LAYOUT_split_3x5_3(KC_NO, KC_P7, KC_P8, KC_P9, KC_EQL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_P0, KC_P4, KC_P5, KC_P6, KC_MINS, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_DOT, KC_P1, KC_P2, KC_P3, KC_PLUS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_SPC, KC_BSPC, KC_TRNS, KC_ENT, KC_NO),
+    [4] = LAYOUT_split_3x5_3(LCKSCRN, KC_NO, KC_NO, KC_NO, QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, SCRNSHT, KC_NO, KC_NO, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_NO, ZMUTE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPLY, KC_NO, KC_MUTE, ZMUTE, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS)
 };
+//keytographer:generated:end
 
 const uint16_t PROGMEM l_n_combo[]    = {KC_L, HOME_N, COMBO_END};
 const uint16_t PROGMEM u_e_combo[]    = {KC_U, HOME_E, COMBO_END};
