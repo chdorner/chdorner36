@@ -30,12 +30,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 //keytographer:generated:end
 
+// right-handed vertical combos
 const uint16_t PROGMEM l_n_combo[]    = {KC_L, HOME_N, COMBO_END};
 const uint16_t PROGMEM u_e_combo[]    = {KC_U, HOME_E, COMBO_END};
 const uint16_t PROGMEM n_m_combo[]    = {HOME_N, KC_M, COMBO_END};
 const uint16_t PROGMEM e_comm_combo[] = {HOME_E, KC_COMM, COMBO_END};
 const uint16_t PROGMEM o_sq_combo[]   = {HOME_O, KC_QUOT, COMBO_END};
 
+// right-handed horizontal combos
+const uint16_t PROGMEM k_m_combo[] = {KC_K, KC_M, COMBO_END};
+
+// left-handed horizontal combos
+const uint16_t PROGMEM v_b_combo[] = {KC_V, KC_B, COMBO_END};
+
+// two-handed combos
 const uint16_t PROGMEM p_l_combo[]  = {KC_P, KC_L, COMBO_END};
 const uint16_t PROGMEM v_m_combo[]  = {KC_V, KC_M, COMBO_END};
 const uint16_t PROGMEM a_o_combo[]  = {HOME_A, HOME_O, COMBO_END};
@@ -48,6 +56,12 @@ combo_t key_combos[] = {
     [N_M_LCBR_LBRC]    = COMBO_ACTION(n_m_combo),
     [E_COMM_RCBR_RBRC] = COMBO_ACTION(e_comm_combo),
     [O_SQ_ESC]         = COMBO(o_sq_combo, KC_ESC),
+
+    // right-handed horizontal combos
+    [K_M_APPSWCH] = COMBO(k_m_combo, APPSWCH),
+
+    // left-handed horizontal combos
+    [V_B_APPSWCH] = COMBO(v_b_combo, APPSWCH),
 
     // two-handed combos
     [P_L_MINS]     = COMBO(p_l_combo, KC_MINS),
@@ -85,7 +99,29 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
     }
 };
 
+void process_app_switcher(bool *active, uint16_t keycode, keyrecord_t *record) {
+    if (keycode == APPSWCH) {
+        if (record->event.pressed) {
+            if (!*active) {
+                *active = true;
+                register_code(KC_LGUI);
+            }
+            register_code(KC_TAB);
+        } else {
+            unregister_code(KC_TAB);
+        }
+
+    } else if (*active) {
+        unregister_code16(KC_LGUI);
+        *active = false;
+    }
+}
+
+bool app_switcher_active = false;
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    process_app_switcher(&app_switcher_active, keycode, record);
+
     switch (keycode) {
     case LCKSCRN:
         if (record->event.pressed) {

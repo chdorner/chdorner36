@@ -10,6 +10,7 @@ enum custom_keycodes {
     LCKSCRN = SAFE_RANGE,
     SCRNSHT,
     ZMUTE,
+    APPSWCH,
 };
 
 enum combos {
@@ -19,6 +20,12 @@ enum combos {
     N_M_LCBR_LBRC,
     E_COMM_RCBR_RBRC,
     O_SQ_ESC,
+
+    // right-handed horizontal combos
+    K_M_APPSWCH,
+
+    // left-handed horizontal combos
+    V_B_APPSWCH,
 
     // two-handed combos
     P_L_MINS,
