@@ -14,8 +14,8 @@ My Corne crkbd QMK layout with 36 keys and miryoku-esque directives.
   * `)` = `u` + `e` – middle finger between home and above row
   * `{` = `n` + `m` – index finger between home and below row
   * `}` = `e` + `,` – middle finger between home and below row
-  * `[` = `SFT` + `n` + `m` – ring finger between home and above row
-  * `]` = `SFT` + `e` + `,` – pinky finger between home and above row
+  * `[` = `y` + `i` – ring finger between home and above row
+  * `]` = `;` + `o` – pinky finger between home and above row
   * `ESC` = `o` + `'` – pinky finger between home and below row, easily accessible even when hand not on home row
 * two-handed
   * `-` = `p` + `l` – both index fingers above home row

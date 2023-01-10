@@ -17,8 +17,10 @@ enum combos {
     // right-handed vertical combos
     L_N_LPRN,
     U_E_RPRN,
-    N_M_LCBR_LBRC,
-    E_COMM_RCBR_RBRC,
+    N_M_LCBR,
+    E_COMM_RCBR,
+    Y_I_LBRC,
+    SEMI_O_RBRC,
     O_SQ_ESC,
 
     // right-handed horizontal combos
